@@ -77,3 +77,8 @@ void a_star(const Graph &g, int s, int d, vector<int> &distances, vector<int> &p
     }
   }
 }
+
+int main(int argc, char** argv)
+{
+  
+}
