@@ -12,6 +12,7 @@ public:
   Graph(int n) {
     vertices_ = n;
     edges_ = vector<vector<int>>(vertices_, vector<int>());
+    weights_.resize(vertices_, vector<int>(vertices_));
   }
 
   // Add an edge to the graph.
@@ -28,7 +29,7 @@ public:
   }
 
   // Get the adjacency list for a vertex.
-  const vector<int> &adj(int u) const {
+  const std::vector<int>& adj(int u) const {
     return edges_[u];
   }
 
@@ -39,8 +40,8 @@ public:
 
 private:
   int vertices_;
-  vector<vector<int>> edges_;
-  vector<vector<int>> weights_;
+  std::vector<std::vector<int>> edges_;
+  std::vector<std::vector<int>> weights_;
 };
 
 // This function finds the shortest path from the source vertex `s` to the destination vertex `d` using the A* algorithm.
@@ -80,5 +81,5 @@ void a_star(const Graph &g, int s, int d, vector<int> &distances, vector<int> &p
 
 int main(int argc, char** argv)
 {
-  
+
 }

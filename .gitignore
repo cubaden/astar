@@ -243,3 +243,6 @@ build/Testing/20230808-0819/Test.xml
 build/Testing/Temporary/LastTest_20230808-0819.log
 build/cmake_install.cmake
 build/astar
+build/.cmake/api/v1/reply/cache-v2-3f5e907fe8f9c085089a.json
+build/.cmake/api/v1/reply/codemodel-v2-b6d14551de0c566065b4.json
+build/.cmake/api/v1/reply/index-2023-08-08T15-31-05-0458.json
